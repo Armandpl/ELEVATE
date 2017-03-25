@@ -2,7 +2,7 @@
   		<div class="container-fluid">
   			<!--NAV BAR HEADER-->
    			<div class="navbar-header">
-      			<a class="navbar-brand" href="index.php">
+      			<a class="navbar-brand" href="home.php">
         			<img src="img/elevate_logo.png" alt="ELEVATE"/>
       			</a>
       			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
