@@ -11,7 +11,13 @@
 
 	<section id="main_content">
 		<div id="guts">
-			<h1>track</h1>
+			<section class="container-fluid nav-fix">
+				<div class="row">
+						<div class="col">
+							<h1>Track</h1>								
+						</div>
+				</div>	
+			</section>
 		</div>
 	</section>
 </body>
