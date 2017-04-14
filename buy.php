@@ -13,13 +13,28 @@
 		<div id="guts">
 			<section class="container-fluid nav-fix">
 				<div class="row">
-						<div class="col-xs-6" style="border: 1px solid black;">
-							<h1>Buy</h1>								
-						</div>
 
-						<div class="col-xs-6" style="border: 1px solid red;">
-							<h1>trespgjeporgjepgojergoj</h1>								
-						</div>
+					<div class="col-xs-12 col-sm-6" style="border: 1px solid black;">
+						<img src="img/board.png/>" class="img-responsive center-block"/>						
+					</div>
+
+					<div class="col-xs-12 col-sm-6" style="border: 1px solid red;">
+						<div class="row">
+							<h2>ELEVATE Cruiser</h2>
+			                <hr/>
+			                <p>Elegant homemade cruiser board. Made out of strong cannadian mapple. Won't break.</p>	
+			                <hr/>	
+			                <button type="button" class="btn btn-primary btn-lg">PRE-ORDER</button>		
+		                </div>	
+		                <div class="row">
+		                	<div class="col-xs-12">
+								<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
+								<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
+								<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
+							</div>
+		                </div>
+					</div>
+						
 				</div>	
 			</section>
 		</div>
