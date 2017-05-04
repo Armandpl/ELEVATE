@@ -14,11 +14,11 @@
 			<section class="container-fluid nav-fix">
 				<div class="row">
 
-					<div class="col-xs-12 col-sm-6" style="border: 1px solid black;">
+					<div class="col-xs-12 col-sm-5 col-sm-offset-1" style="border: 1px solid black;">
 						<img src="img/board.png/>" class="img-responsive center-block"/>						
 					</div>
 
-					<div class="col-xs-12 col-sm-6" style="border: 1px solid red;">
+					<div class="col-xs-12 col-sm-5" style="border: 1px solid red;">
 						<div class="row">
 							<h2>ELEVATE Cruiser</h2>
 			                <hr/>
