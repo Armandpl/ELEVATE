@@ -1,53 +1,57 @@
  <!DOCTYPE html> 
 <html>
-	<?php require("require/head.php");?>
+
 <head>
-		
+  <?php require("require/head.php");?>		
 </head>
 
 <body id="wrap">
 	<!--NAV BAR-->
 	<?php require("require/nav.php");?>
 
-	<section id="main_content">
-		<div id="guts">
-		<section class="container-fluid nav-fix">
-				<div class="row">
-				<h2>Suivi Colis 6392748 </h2>
-	<div class="col-xs-offset-5 vertical-center">
- 					
-  						<p></p>            
-  							<table class="table">
-   						 <thead>
-      							<tr>
-       								 <th>Relais 1</th>
-       								 <th>Arrivé</th>
-        							 
-     							</tr>
-   						 </thead>
-    	<tbody>
-      <tr>
-        <td>Poid de la commande</td>
-        <td>2,3 kg</td>
-        
-      </tr>
-      <tr>
-        <td>Relais 3</td>
-        <td>	Arrivé
+<section id="main_content">
+		    <div id="guts">
+	         <section class="container-fluid nav-fix" id="order">
+				      <div class="row vertical-center">
+				         <h1>Suivi Colis 6 : </h1>
+	               <div class="col-xs-offset-2 col-xs-8" style="border: 1px">           
+  	             <table class="table" style="border: 1px solid red">
+                 
+                   <thead>
+                      <tr>
+                      <th>Une licorne</th>
+                      <th>Arrivé</th>    
+                      </tr>
+                   </thead>
 
-        		</td>
-       
-      </tr>
-      <tr>
-        	<td>Relais 4</td>
-       		<td>Dooley</td>
-        
-      </tr>
-    </tbody>
-  	</table>
-</div>
-		</div>
-	</section>
+                   <tbody>
+                    <tr>
+                    <td>Poids de la commande</td>
+                    <td>2,3 kg</td>
+          
+                    </tr>
+                    <tr>
+                    <td>Taille de la planche</td>
+                    <td>1,12m</td>
+         
+                    </tr>
+                    <tr>
+                    <td>Composant </td>
+                    <td>Bois</td>
+          
+                    </tr>
+                  </tbody>
+                 </table>
+   						   
+                  
+
+              </div>
+            </div>
+          </section>
+        </div>
+    
+</section>
+
 </body>
 
 </html>

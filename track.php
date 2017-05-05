@@ -11,8 +11,8 @@
 
 	<section id="main_content">
 		<div id="guts">
-			<section class="container-fluid nav-fix">
-				<div class="row">
+			<section class="container-fluid nav-fix" id="track">
+				<div class="row vertical-center">
 				
 						<div class="col-xs-offset-7 vertical-center horizontal-center "style="button: 1px solid green;">
 							<div class="input-group">
