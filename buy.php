@@ -15,7 +15,7 @@
 				<div class="row">
 
 					<div class="col-xs-12 col-sm-5 col-sm-offset-1" style="border: 1px solid black;">
-						<img src="img/board.png/>" class="img-responsive center-block"/>						
+						<img src="img/board.png" class="img-responsive center-block" width="640" height="960s"/>						
 					</div>
 
 					<div class="col-xs-12 col-sm-5" style="border: 1px solid red;">
