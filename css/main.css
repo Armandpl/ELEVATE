@@ -1,6 +1,6 @@
 body
 {
-  overflow-x: hidden;
+  font-family: Open Sans;
 }
 span.glyphicon-sunglasses {
     font-size: 5em;
@@ -22,8 +22,10 @@ span.glyphicon-sunglasses {
 
   display: flex;
   align-items: center;
-  margin-right: 0;
-  margin-left: 0;
+}
+.vertical-adjust {/*ajuste un élément à la taille verticale de la page*/
+  min-height: 100%;  /* Fallback for browsers that do NOT support vh unit */
+  min-height: 100vh;
 }
 #home{
 	color: white;

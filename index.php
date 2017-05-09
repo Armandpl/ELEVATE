@@ -1,20 +1,23 @@
  <!DOCTYPE html> 
 <html>
-	<?php require("require/head.php");?>
+
 <head>
-		
+	<?php require("require/head.php");?>	
 </head>
 
 <body id="wrap">
 	<!--NAV BAR-->
 	<?php require("require/nav.php");?>
 
-	<noscript> <!-- Redirection vers la page home.php si le js est désactivé-->
-	  <meta http-equiv="refresh" content="0.0;url=home.php">
-	</noscript>
-
 	<section id="main_content">
 		<div id="guts">
+			<section id="home" class="container-fluid vertical-center">
+					<div class="container text-center">
+							<h1>Cool handmade skateboards.</h1>
+							<hr>
+							<a href="buy"><button type="button" class="btn btn-default btn-md">PRE-ORDER</button></a>						
+					</div>	
+			</section>
 		</div>
 	</section>
 </body>

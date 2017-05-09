@@ -2,7 +2,7 @@ $(function() {
 
     /*$(document).ready();*/
 
-    gestionUrl();
+    /*gestionUrl();
     function gestionUrl() {
         if(location.pathname.indexOf(".php") >= 0) // fonctionne parce que indexOf retourne -1 s'il a rien trouvé
         {//Si l'url contient .php, on enlève .php
@@ -18,7 +18,7 @@ $(function() {
             loadContent(url);//on load la page
             history.pushState(null, null, url.replace(/\.[^/.]+$/, ""));//on modifie l'url pour afficher le nom de la page
         }
-    }
+    }*/
 
     if (window.history && window.history.pushState){
     var newHash      = "",
@@ -32,7 +32,7 @@ $(function() {
     
     $("nav").delegate("a", "click", function() {
         _link = $(this).attr("href");
-        history.pushState(null, null, _link.replace(/\.[^/.]+$/, ""));
+        history.pushState(null, null, _link/*.replace(/\.[^/.]+$/, "")*/);
         loadContent(_link);
         return false;
     });
@@ -44,9 +44,9 @@ $(function() {
                     $mainContent.hide().load(href + " #guts", function(responseText, statusText, xhr) {
                         if(statusText=="success"){
                             $mainContent.fadeIn(200, function() {
-                                $pageWrap.animate({
+                                /*$pageWrap.animate({
                                     height: baseHeight + $mainContent.height() + "px"
-                                });
+                                });*/
                             });
                             $("nav a").removeClass("current");
                             console.log(href);
@@ -55,7 +55,7 @@ $(function() {
                         else{//Si il y a une erreur quand on load la page demandée
                             var url = "home.php"; //page à loader
                             loadContent(url);//on load la page
-                            history.pushState(null, null, url.replace(/\.[^/.]+$/, ""));//on modifie l'url pour afficher le nom de la page
+                            history.pushState(null, null, url/*.replace(/\.[^/.]+$/, "")*/);//on modifie l'url pour afficher le nom de la page
 
                         }    
 
