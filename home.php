@@ -11,16 +11,12 @@
 
 	<section id="main_content">
 		<div id="guts">
-			<section id="home" class="container-fluid">
-				<div class="row vertical-center">
+			<section id="home" class="container-fluid vertical-center">
 					<div class="container text-center">
-						<div class="col">
 							<h1>Cool handmade skateboards.</h1>
 							<hr>
 							<a href="buy.php"><button type="button" class="btn btn-default btn-md">PRE-ORDER</button></a>						
-						</div>
 					</div>	
-				</div>	
 			</section>
 		</div>
 	</section>

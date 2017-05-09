@@ -1,6 +1,9 @@
 $(function() {
 
-    $(document).ready(function() {
+    /*$(document).ready();*/
+
+    gestionUrl();
+    function gestionUrl() {
         if(location.pathname.indexOf(".php") >= 0) // fonctionne parce que indexOf retourne -1 s'il a rien trouvé
         {//Si l'url contient .php, on enlève .php
             history.pushState(null, null, location.pathname.replace(/\.[^/.]+$/, ""));    
@@ -15,7 +18,7 @@ $(function() {
             loadContent(url);//on load la page
             history.pushState(null, null, url.replace(/\.[^/.]+$/, ""));//on modifie l'url pour afficher le nom de la page
         }
-    });
+    }
 
     if (window.history && window.history.pushState){
     var newHash      = "",
@@ -60,10 +63,11 @@ $(function() {
                 });     
     }
     
+    //
     $(window).bind('popstate', function(){
-       _link = location.pathname.replace(/^.*[\\\/]/, ''); //get filename only
+       _link = location.pathname.replace(/^.*[\\\/]/, ''); //récupère uniquement le nom de fichier
        loadContent(_link+".php");
     });
 
-} // otherwise, history is not supported, so nothing fancy here.
+} 
 });
