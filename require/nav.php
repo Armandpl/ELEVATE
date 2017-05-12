@@ -1,6 +1,6 @@
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<!--<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   		<div class="container-fluid">
-  			<!--NAV BAR HEADER-->
+  			<!--NAV BAR HEADER--><!--
    			<div class="navbar-header">
       			<a class="navbar-brand" href="index">
         			<img src="img/elevate_logo.png" alt="ELEVATE"/>
@@ -12,7 +12,7 @@
             		<span class="icon-bar"></span>
           		</button>
     		</div>
-    		<!--NAV BAR LINKS-->
+    		<!--NAV BAR LINKS--><!--
     		<div id="navbar" class="navbar-collapse collapse">
 	    		<ul class="nav navbar-nav navbar-right">
 	    			<li> <a class="page-scroll" href="buy">BUY</a> </li>
@@ -20,4 +20,24 @@
 	    		</ul>	
 	    	</div>	
   		</div>
-	</nav>
+	</nav>-->
+
+  <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index"><img src="img/elevate_logo.png" height="25" alt="ELEVATE"/></a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+      <li class="nav-item">
+        <a class="nav-link" href="buy">Buy</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="track">Track</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
