@@ -11,7 +11,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous" defer></script>
 	<!--<script type="text/javascript" src="js/modernizr.js" defer></script>-->
 	<!--<script type="text/javascript" src="js/dynamicpage.js" defer></script>-->
-	<!--<script src="https://js.stripe.com/v3/" defer></script><!--on load stripe partout, c'est mieux pour la détection de fraude-->
+	<script src="https://js.stripe.com/v3/" defer></script><!--on load stripe partout, c'est mieux pour la détection de fraude-->
 	<script type="text/javascript" src="js/main.js" defer></script>
 
 	<meta charset="UTF-8">
