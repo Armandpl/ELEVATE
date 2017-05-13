@@ -1,9 +1,11 @@
  <!DOCTYPE html> 
 <html>
-	<?php require("require/head.php");?>
+
 <head>
-		
+	<?php require("require/head.php");?>		
 </head>
+
+<?php require("require/config.php");?>
 
 <body id="wrap">
 	<!--NAV BAR-->
@@ -19,7 +21,7 @@
 					  <form action="/your-server-side-code" method="POST">
 						  <script
 						    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-						    data-key="pk_test_slTYUOfdX8nbVTqA0lX6ZA3Y"
+						    data-key=<?php echo("'".$StripeKey."'");?>
 						    data-amount="999"
 						    data-name="ELEVATE"
 						    data-description="Widget"
