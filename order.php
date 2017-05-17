@@ -8,18 +8,20 @@
 <body id="wrap">
 	<!--NAV BAR-->
 	<?php require("require/nav.php");?>
-
+  <?php
+// Sous MAMP (Mac)
+$bdd = new PDO('mysql:host=localhost;dbname=ELEVATE;charset=utf8', 'root', 'root');
+?>
 <section id="main_content">
 		    <div id="guts">
 	         <section class="container-fluid nav-fix" id="order">
 				      <div class="row vertical-center">
-				         <h1>Suivi Colis 6 : </h1>
+				         <h1>Colis n<?php echo $_POST['commande'];?> </h1>
 	               <div class="col-xs-offset-2 col-xs-8" style="border: 1px">           
-  	             <table class="table" style="border: 1px solid red">
-                 
+  	             <table class="table" style="border: 1px solid red">               
                    <thead>
                       <tr>
-                      <th>Une licorne</th>
+                      <th><?php echo $_POST['commande'];?> </th>
                       <th>Arrivé</th>    
                       </tr>
                    </thead>
@@ -27,7 +29,7 @@
                    <tbody>
                     <tr>
                     <td>Poids de la commande</td>
-                    <td>2,3 kg</td>
+                    <td><?php echo $_POST['nom de variable'];?></td>
           
                     </tr>
                     <tr>
@@ -51,6 +53,7 @@
         </div>
     
 </section>
+
 
 </body>
 
