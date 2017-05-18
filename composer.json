@@ -1,0 +1,14 @@
+{
+    "name": "elevate/elevate",
+    "description": "e-commerce website that sells skateboards",
+    "require": {
+        "stripe/stripe-php": "^4.9"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "elevate",
+            "email": "elevate@n0s.eu"
+        }
+    ]
+}

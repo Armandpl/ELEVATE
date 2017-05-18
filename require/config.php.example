@@ -1,7 +1,7 @@
 <?php
-$configHostBdd="localhost";
-$configNameBdd="ELEVATE";
-$configUserBdd="user";
-$configPassBdd="pass";
-$StripeKey="YourStripeKey";
+$host="localhost";
+$dbname="ELEVATE";
+$user="root";
+$pass="root";
+$StripeKey="stripe_key";
 ?>
