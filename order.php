@@ -11,6 +11,8 @@
   <?php
 // Sous MAMP (Mac)
 $bdd = new PDO('mysql:host=localhost;dbname=ELEVATE;charset=utf8', 'root', 'root');
+ foreach($slides as $slide)
+ 
 ?>
 <section id="main_content">
 		    <div id="guts">
