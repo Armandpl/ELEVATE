@@ -50,13 +50,13 @@ hr {
 #order 
 {
   background: url("../img/bol.jpg") no-repeat center fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 
 }
 #track
 {
   background: url("../img/bol.jpg") no-repeat center fixed;
-    -webkit-background-size: cover;
-    background-size: cover
+  -webkit-background-size: cover;
+  background-size: cover
 }

@@ -10,7 +10,7 @@
 	<?php require("require/nav.php");?>
   <?php
 // Sous MAMP (Mac)
-$bdd = new PDO('mysql:host=localhost;dbname=ELEVATE;charset=utf8', 'root', 'root');
+$bdd = new PDO('mysql:host=localhost;dbname=ELEVATE;charset=utf8', 'root', 'loutre');
  foreach($slides as $slide)
  
 ?>
@@ -19,7 +19,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=ELEVATE;charset=utf8', 'root', 'root
 	         <section class="container-fluid nav-fix" id="order">
 				      <div class="row vertical-center">
 				         <h1>Colis n<?php echo $_POST['commande'];?> </h1>
-	               <div class="col-xs-offset-2 col-xs-8" style="border: 1px">           
+	               <div class="col-offset-2 col-8" style="border: 1px">           
   	             <table class="table" style="border: 1px solid red">               
                    <thead>
                       <tr>
