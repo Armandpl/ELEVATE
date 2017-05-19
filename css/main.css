@@ -35,3 +35,28 @@ hr {
     width: 50%;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
 }
+
+/* Modif hector*/
+#order h1 {
+  color:red;
+  position:absolute;
+  top:50px;
+
+}
+#order table
+{
+  color:white;
+}  
+#order 
+{
+  background: url("../img/bol.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+#track
+{
+  background: url("../img/bol.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover
+}
