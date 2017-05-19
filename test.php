@@ -12,9 +12,10 @@
 		}
 	try
 		{
+			$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);//On active les erreurs
 			//on prépare la requête SQL
-			$request = $bdd->prepare("INSERT INTO 'ORDERS' (order_number, order_date, status, track_number, product, name, surname, email, address, address_2, zipcode, city, country) VALUES (:order_number, :order_date, :status, :track_number, :product, :name, :surname, :email, :address, :address_2, :zipcode, :city, :country)");
-			$request->execute(array(
+			$request = $bdd->prepare("INSERT INTO ORDERS (order_number, order_date, status, track_number, product, name, surname, email, address, address_2, zipcode, city, country) VALUES (:order_number, :order_date, :status, :track_number, :product, :name, :surname, :email, :address, :address_2, :zipcode, :city, :country)");
+			var_dump($request->execute(array(
 				"order_number" => uniqid(rand(1000,9999), false),//On génère un numéro de commande unique
 				"order_date" => date("Y-m-d"),//On récupère la date
 				"status" => "paid",
@@ -28,13 +29,14 @@
 				"zipcode" => "test",
 				"city" => "test",
 				"country" => "test"
-			));
+			)));
 			$request->closeCursor();
 			echo("Merci de votre commande!");
 
 		}
 		catch(Exception $e)
 		{
+			var_dump($e);
 			echo("erreur lors de la création de la commmande");
 		}
 ?>

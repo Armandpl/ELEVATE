@@ -33,17 +33,17 @@
 		                		<div id="contact" style="display: none;">
 									<div class="form-group">
 									  <label for="name">Name</label>
-									  <input class="form-control form-control-sm" type="text" placeholder="Your name" id="name" required>
+									  <input class="form-control form-control-sm" type="text" placeholder="Your name" name="name" required>
 									</div>
 
 									<div class="form-group">
 									  <label for="surname">Surname</label>
-									  <input class="form-control form-control-sm" type="text" placeholder="Your surname" id="surname" required>
+									  <input class="form-control form-control-sm" type="text" placeholder="Your surname" name="surname" required>
 									</div>
 
 									<div class="form-group">
 									  <label for="email">Email</label>
-									  <input class="form-control form-control-sm" type="email" placeholder="email@example.com" id="email" required>
+									  <input class="form-control form-control-sm" type="email" placeholder="email@example.com" name="email" required>
 									</div>
 
 									<button type="button" class="btn btn-default" id="cancel_button">Cancel</button>
@@ -53,27 +53,27 @@
 								<div id="whole_address" style="display: none;">
 									<div class="form-group">
 									  <label for="country">Country</label>
-									  <input class="form-control form-control-sm" type="text"  id="country" required>
+									  <input class="form-control form-control-sm" type="text"  name="country" required>
 									</div>
 
 									<div class="form-group">
 									  <label for="address">Address</label>
-									  <input class="form-control form-control-sm" type="text" placeholder="Your adress" id="address" required>
+									  <input class="form-control form-control-sm" type="text" placeholder="Your adress" name="address" required>
 									</div>
 
 									<div class="form-group">
 									  <label for="address_2">Additional address details</label>
-									  <input class="form-control form-control-sm" type="text" placeholder="Leave empty if you need" id="address_2">
+									  <input class="form-control form-control-sm" type="text" placeholder="Leave empty if you need" name="address_2">
 									</div>
 
 									<div class="form-group">
 									  <label for="city">City</label>
-									  <input class="form-control form-control-sm" type="text" placeholder="Your city" id="city" required>
+									  <input class="form-control form-control-sm" type="text" placeholder="Your city" name="city" required>
 									</div>
 
 									<div class="form-group">
 									  <label for="zipcode">Postal/zip code</label>
-									  <input class="form-control form-control-sm" type="number" placeholder="33667" id="zipcode" required>
+									  <input class="form-control form-control-sm" type="number" placeholder="33667" name="zipcode" required>
 									</div>
 
 									<button type="button" class="btn btn-default" id="address_back">Back</button>
@@ -191,26 +191,19 @@
 			      errorElement.textContent = result.error.message;
 			    } else {
 			      // Send the token to your server
-			      stripeTokenHandler(result.token);
+			      var hiddenInput = document.createElement('input');
+				  hiddenInput.setAttribute('type', 'hidden');
+				  hiddenInput.setAttribute('name', 'stripeToken');
+				  hiddenInput.setAttribute('value', result.token.id);
+				  form.appendChild(hiddenInput);
+
+				  // Submit the form
+				  form.submit();
 			    }
 			  });
 			});
 
  	});
-
- 	function stripeTokenHandler(token) {
-	  // Insert the token ID into the form so it gets submitted to the server
-	  var form = document.getElementById('payment_form');
-	  var hiddenInput = document.createElement('input');
-	  hiddenInput.setAttribute('type', 'hidden');
-	  hiddenInput.setAttribute('name', 'stripeToken');
-	  hiddenInput.setAttribute('value', token.id);
-	  form.appendChild(hiddenInput);
-
-	  // Submit the form
-	  form.submit();
-	}
-
 	</script>
 
 </body>

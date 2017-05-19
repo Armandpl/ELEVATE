@@ -2,7 +2,6 @@
 	require("require/config.php");//On récupère les pass de la BDD + la clé stripe
 	require("vendor/autoload.php");//On load la lib stripe avec composer
 	\Stripe\Stripe::setApiKey($StripeKey);
-
 	$token = $_POST['stripeToken'];//On récupère le token retourné par stripe
 	$success=0;//Variable qu'on passe à 1 si on arriver à "charger" la carte
 	try {//On "charge" la carte du client
@@ -52,11 +51,12 @@
 
 		try
 		{
+			$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);//On active les erreurs
 			//on prépare la requête SQL
-			$request = $bdd->prepare("INSERT INTO 'ORDERS' (order_number, 'date', status, track_number, product, name, surname, email, address, address_2, zipcode, city, country) VALUES (:order_number, :`date`, :status, :track_number, :product, :name, :surname, :email, :address, :address_2, :zipcode, :city, :country);");
+			$request = $bdd->prepare("INSERT INTO ORDERS (order_number, order_date, status, track_number, product, name, surname, email, address, address_2, zipcode, city, country) VALUES (:order_number, :order_date, :status, :track_number, :product, :name, :surname, :email, :address, :address_2, :zipcode, :city, :country)");
 			$request->execute(array(
 				"order_number" => uniqid(rand(1000,9999), false),//On génère un numéro de commande unique
-				"date" => date("Y-m-d"),//On récupère la date
+				"order_date" => date("Y-m-d"),//On récupère la date
 				"status" => "paid",
 				"track_number" => "none",//Numéro de tracking du transporteur que l'on a pas encore
 				"product" => "ELEVATE CRUISER",
@@ -75,7 +75,6 @@
 		catch(Exception $e)
 		{
 			echo("erreur lors de la création de la commmande");
+			var_dump($e);
 		}
 	}
-
-?>
