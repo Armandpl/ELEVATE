@@ -53,7 +53,7 @@
 								<div id="whole_address" style="display: none;">
 									<div class="form-group">
 									  <label for="country">Country</label>
-									  <input class="form-control form-control-sm" type="text"  name="country" required>
+									  <input class="form-control form-control-sm" type="text"  name="country" id="country" required>
 									</div>
 
 									<div class="form-group">
@@ -125,8 +125,10 @@
 		});
 
 		$("#contact_next").click(function() {
-    		$("#contact").hide();
-    		$("#whole_address").slideDown();
+			if(verifyDiv("#contact")){
+				$("#contact").hide();
+				$("#whole_address").slideDown();
+			}
 		});
 
 		$("#address_back").click(function() {
@@ -135,8 +137,10 @@
 		});
 
 		$("#address_next").click(function() {
-    		$("#whole_address").hide();
-    		$("#payment").slideDown();
+			if(verifyDiv("#whole_address")){
+	    		$("#whole_address").hide();
+	    		$("#payment").slideDown();
+    		}
 		});
 
 		$("#payment_back").click(function() {
@@ -204,6 +208,26 @@
 			});
 
  	});
+
+ 	function verifyDiv(divID){//Fonction pour vérifier que tous les input d'une div sont bien remplis, retourne true si c'est le cas
+ 		var result = true;
+ 		$(divID).each(function(){
+		    $(this).find(':input').not(':button').each(function(){
+
+	 			var name = $(this).attr('name');
+	 			if(document.getElementsByName(name)[0].validity.valid==false){
+	 				$(this).parent().addClass("has-danger");
+	 				result=false;
+	 			}	
+	 			else
+	 			{
+	 				$(this).parent().removeClass("has-danger");	
+	 			}
+			});
+		});
+
+		return result;
+ 	}
 	</script>
 
 </body>
