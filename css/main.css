@@ -4,7 +4,7 @@ body
   background-color: #f2f2f2;
 }
 .vertical-center {
-  min-height: 100%;  /* Fallback for browsers that do NOT support vh unit */
+  min-height: 100%;  /* Fallback pour les naviguateur qui ne supportent pas vh unit */
   min-height: 100vh;
 
   display: flex;
@@ -16,7 +16,11 @@ body
   padding:0;
   background: url("../img/bg.jpg") no-repeat center fixed; 
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
+  background-size: cover;
+}
+#tanks{
+  margin:0;
+  padding:0; 
 }
 .nav-fix{
 	/*pour compenser les 50px de la navbar*/

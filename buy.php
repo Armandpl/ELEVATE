@@ -28,7 +28,7 @@
 				                <button type="button" class="btn btn-primary btn-lg" id="order_button">ORDER</button>	
 			                </div>	
 
-		                	<form action="charge" method="post" class="col-xs-12 col-sm-8 my-auto" id="payment_form">
+		                	<form action="thanks" method="post" class="col-xs-12 col-sm-8 my-auto" id="payment_form">
 								
 		                		<div id="contact" style="display: none;">
 									<div class="form-group">
