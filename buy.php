@@ -25,7 +25,7 @@
 				                
 				                <p>Elegant homemade cruiser board. Made out of strong canadian mapple. Won't break.</p>	
 
-				                <button type="button" class="btn btn-primary btn-lg" id="order_button">ORDER</button>	
+				                <button type="button" class="btn btn-primary btn-lg" id="order_button">ORDER 150€</button>	
 			                </div>	
 
 		                	<form action="thanks" method="post" class="col-xs-12 col-sm-8 my-auto" id="payment_form">
@@ -94,7 +94,7 @@
 									</div>
 
 									<button type="button" class="btn btn-default" id="payment_back">Back</button>
-									<button type="submit" class="btn btn-primary">Submit</button>
+									<button type="submit" class="btn btn-primary">Pay 150€</button>
 								</div>
 							</form>	
 

@@ -15,7 +15,7 @@
 					<div class="container text-center">
 							<h1>Cool handmade skateboards.</h1>
 							<hr>
-							<a href="buy"><button type="button" class="btn btn-default btn-md">PRE-ORDER</button></a>						
+							<a href="buy"><button type="button" class="btn btn-primary btn-md">LEARN MORE</button></a>						
 					</div>	
 			</section>
 		</div>
