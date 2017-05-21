@@ -5,105 +5,101 @@
 	<?php require("require/head.php");?>		
 </head>
 
-<body id="wrap">
+<body>
 	<!--NAV BAR-->
 	<?php require("require/nav.php");?>
 
-	<section id="main_content">
-		<div id="guts">
-			<section class="container-fluid nav-fix">
-				<div class="row">
+	<section class="container-fluid nav-fix">
+		<div class="row">
 
-					<div class="col-xs-12 col-sm-5 offset-sm-1 text-center" id="board_col">
-						<img src="img/board.png" class="img-fluid mx-auto"/>			
-					</div>
+			<div class="col-xs-12 col-sm-5 offset-sm-1 text-center" id="board_col">
+				<img src="img/board.png" class="img-fluid mx-auto"/>			
+			</div>
 
-					<div class="col-xs-12 col-sm-5">
-						<div class="row h-100">
-							<div class="col-xs-12 my-auto" id="description">
-								<h2>ELEVATE Cruiser</h2>
-				                
-				                <p>Elegant homemade cruiser board. Made out of strong canadian mapple. Won't break.</p>	
+			<div class="col-xs-12 col-sm-5">
+				<div class="row h-100">
+					<div class="col-xs-12 my-auto" id="description">
+						<h2>ELEVATE Cruiser</h2>
+		                
+		                <p>Elegant homemade cruiser board. Made out of strong canadian mapple. Won't break.</p>	
 
-				                <button type="button" class="btn btn-primary btn-lg" id="order_button">ORDER 150€</button>	
-			                </div>	
+		                <button type="button" class="btn btn-primary btn-lg" id="order_button">ORDER 150€</button>	
+	                </div>	
 
-		                	<form action="thanks" method="post" class="col-xs-12 col-sm-8 my-auto" id="payment_form">
-								
-		                		<div id="contact" style="display: none;">
-									<div class="form-group">
-									  <label for="name">Name</label>
-									  <input class="form-control form-control-sm" type="text" placeholder="Your name" name="name" required>
-									</div>
-
-									<div class="form-group">
-									  <label for="surname">Surname</label>
-									  <input class="form-control form-control-sm" type="text" placeholder="Your surname" name="surname" required>
-									</div>
-
-									<div class="form-group">
-									  <label for="email">Email</label>
-									  <input class="form-control form-control-sm" type="email" placeholder="email@example.com" name="email" required>
-									</div>
-
-									<button type="button" class="btn btn-default" id="cancel_button">Cancel</button>
-									<button type="button" class="btn btn-primary" id="contact_next">Next</button>
-								</div>
-								
-								<div id="whole_address" style="display: none;">
-									<div class="form-group">
-									  <label for="country">Country</label>
-									  <input class="form-control form-control-sm" type="text"  name="country" id="country" required>
-									</div>
-
-									<div class="form-group">
-									  <label for="address">Address</label>
-									  <input class="form-control form-control-sm" type="text" placeholder="Your adress" name="address" required>
-									</div>
-
-									<div class="form-group">
-									  <label for="address_2">Additional address details</label>
-									  <input class="form-control form-control-sm" type="text" placeholder="Leave empty if you need" name="address_2">
-									</div>
-
-									<div class="form-group">
-									  <label for="city">City</label>
-									  <input class="form-control form-control-sm" type="text" placeholder="Your city" name="city" required>
-									</div>
-
-									<div class="form-group">
-									  <label for="zipcode">Postal/zip code</label>
-									  <input class="form-control form-control-sm" type="number" placeholder="33667" name="zipcode" required>
-									</div>
-
-									<button type="button" class="btn btn-default" id="address_back">Back</button>
-									<button type="button" class="btn btn-primary" id="address_next">Next</button>
-								</div>
-
-								<div id="payment" style="display: none;">
-									<div class="form-row form-group">
-									  	<label for="card-element">
-									      Credit or debit card
-									    </label>
-									    <div id="card-element" class="form-control form-control-sm">
-									      <!-- a Stripe Element will be inserted here. -->
-									    </div>
-
-									    <!-- Used to display Element errors -->
-									    <div id="card-errors" role="alert"></div>
-									</div>
-
-									<button type="button" class="btn btn-default" id="payment_back">Back</button>
-									<button type="submit" class="btn btn-primary">Pay 150€</button>
-								</div>
-							</form>	
-
-		                </div>	
-					</div>
+                	<form action="thanks" method="post" class="col-xs-12 col-sm-8 my-auto" id="payment_form">
 						
-				</div>	
-			</section>
-		</div>
+                		<div id="contact" style="display: none;">
+							<div class="form-group">
+							  <label for="name">Name</label>
+							  <input class="form-control form-control-sm" type="text" placeholder="Your name" name="name" required>
+							</div>
+
+							<div class="form-group">
+							  <label for="surname">Surname</label>
+							  <input class="form-control form-control-sm" type="text" placeholder="Your surname" name="surname" required>
+							</div>
+
+							<div class="form-group">
+							  <label for="email">Email</label>
+							  <input class="form-control form-control-sm" type="email" placeholder="email@example.com" name="email" required>
+							</div>
+
+							<button type="button" class="btn btn-default" id="cancel_button">Cancel</button>
+							<button type="button" class="btn btn-primary" id="contact_next">Next</button>
+						</div>
+						
+						<div id="whole_address" style="display: none;">
+							<div class="form-group">
+							  <label for="country">Country</label>
+							  <input class="form-control form-control-sm" type="text"  name="country" id="country" required>
+							</div>
+
+							<div class="form-group">
+							  <label for="address">Address</label>
+							  <input class="form-control form-control-sm" type="text" placeholder="Your adress" name="address" required>
+							</div>
+
+							<div class="form-group">
+							  <label for="address_2">Additional address details</label>
+							  <input class="form-control form-control-sm" type="text" placeholder="Leave empty if you need" name="address_2">
+							</div>
+
+							<div class="form-group">
+							  <label for="city">City</label>
+							  <input class="form-control form-control-sm" type="text" placeholder="Your city" name="city" required>
+							</div>
+
+							<div class="form-group">
+							  <label for="zipcode">Postal/zip code</label>
+							  <input class="form-control form-control-sm" type="number" placeholder="33667" name="zipcode" required>
+							</div>
+
+							<button type="button" class="btn btn-default" id="address_back">Back</button>
+							<button type="button" class="btn btn-primary" id="address_next">Next</button>
+						</div>
+
+						<div id="payment" style="display: none;">
+							<div class="form-row form-group">
+							  	<label for="card-element">
+							      Credit or debit card
+							    </label>
+							    <div id="card-element" class="form-control form-control-sm">
+							      <!-- a Stripe Element will be inserted here. -->
+							    </div>
+
+							    <!-- Used to display Element errors -->
+							    <div id="card-errors" role="alert"></div>
+							</div>
+
+							<button type="button" class="btn btn-default" id="payment_back">Back</button>
+							<button type="submit" class="btn btn-primary">Pay 150€</button>
+						</div>
+					</form>	
+
+                </div>	
+			</div>
+				
+		</div>	
 	</section>
 
 	<script type="text/javascript" defer>
