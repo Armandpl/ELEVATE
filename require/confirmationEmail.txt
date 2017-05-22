@@ -1,0 +1,4 @@
+Hi SURNAME,
+Thanks a lot for your purchase. We'll be shipping your skateboard soon ! You can track your order on our website with your order number #ORDER_NUMBER.
+Best regards,<br>
+ELEVATE Team.</p>
