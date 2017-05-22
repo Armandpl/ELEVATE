@@ -7,7 +7,7 @@ RUN a2enmod rewrite
 RUN apt-get update && apt-get -y install wget git
 
 # 3) On balances les sources dans le container
-RUN git clone https://github.com/NitroOxyde/ELEVATE/tree/Dev
+RUN git clone -b Dev https://github.com/NitroOxyde/ELEVATE.git
 COPY ELEVATE/ /var/www/html/
 
 # 4) On change le dossier courant
