@@ -13,7 +13,7 @@
 
 	try {//On débite la carte du client
 		$charge = \Stripe\Charge::create(array(
-		  "amount" => 150,
+		  "amount" => 15000,
 		  "currency" => "eur",
 		  "description" => "ELEVATE skateboard",
 		  "source" => $token,
