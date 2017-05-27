@@ -20,8 +20,10 @@ body
 }
 @media screen and (max-width: 576px) {/*Si l'écran est petit (genre un portable)*/
     #home{
-      color: black;
+    color: black;
     background: url("../img/bg_mobile.jpg") no-repeat center fixed; /*On change le background*/
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover;
   }
 }
 #tanks{

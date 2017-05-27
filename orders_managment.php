@@ -72,14 +72,9 @@
 			</div>					
 		</section>
 		<script type="text/javascript" defer>
-			$(document).keyup(function(touche){ // on écoute l'évènement keyup()
-
-			    var appui = touche.which || touche.keyCode; // le code est compatible tous navigateurs grâce à ces deux propriétés
-
-			    if(appui == 13){ // si le code de la touche est égal à 13 (Entrée)
-			        search_update();
-			    }
-			});
+			$("#search").on('input',function(e){
+     			search_update();
+    		});
 
 
 			 	function search_update(){//Fonction masque les commandes qui ne contiennent pas le mot tapé dans la barre de recherche
